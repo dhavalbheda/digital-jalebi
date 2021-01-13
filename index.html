@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="pghealth">
+            <img class="pghealth-image" src="./img/pghealth.png" />
+        </div>
+        <div class="time">
+            <img class="time-image" src="./img/time.png" />
+        </div>
+        <div class="mobile-container">
+            <img class="mobile-image" src="./img/login.png" />
+            <div class='mobile-form'>
+                <form>
+                    <div class="form-row">
+                        <input type="text" class="half-width" placeholder="name"/>
+                        <input type="text" class="half-width" placeholder="surname"/>
+                    </div>
+                    <input type="text" class="full-width" placeholder="password"/>
+                    <img class="submit-image" src="./img/button.png" onclick="load()" alt="Submit" />
+                </form>
+                <img id="loader" class="loader"/>
+            </div>
+        </div>
+        <script>
+            const load = () => {
+              let load = document.getElementById('loader');
+              load.src = "https://media.giphy.com/media/U5DM9YQUbZ2aIVgpKZ/giphy.gif";
+            }
+          </script>
+    </body>
+</html>
